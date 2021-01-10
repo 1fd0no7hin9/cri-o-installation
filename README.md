@@ -1,4 +1,4 @@
-. /etc/os-release
+install cri-o
 
 ```
 VERSION_CRIO=1.17
@@ -12,4 +12,10 @@ curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/
 
 sudo apt update
 sudo apt install cri-o cri-o-runc
+```
+
+install crictl (cri-o command)
+```
+VERSION_CRIO=1.17
+wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION_CRIO-linux-amd64.tar.gz
 ```
